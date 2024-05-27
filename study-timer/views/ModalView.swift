@@ -53,11 +53,15 @@ struct ModalView: View {
             .gesture(dragGesture)
             ZStack {
                 VStack {
+                    Spacer().frame(height: 5)
+                    Text("Reading")
+                        .font(.system(size: 20, weight:.bold))
+                        .foregroundColor(.blue)
+                    Spacer()
                     TimerView()
-                    Text("Timer goes here")
-                        .font(.system(size: 24, weight:.bold))
-                    Text("Time display")
-                        .font(.system(size: 24, weight:.regular))
+                    Spacer()
+                    
+                    
                 }
                 .padding(.horizontal, 30)
             }

@@ -20,6 +20,8 @@
 		5205F1AF2C04255900AF5E86 /* Timer-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205F1AE2C04255900AF5E86 /* Timer-ViewModel.swift */; };
 		5205F1B12C04260400AF5E86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205F1B02C04260400AF5E86 /* ContentView.swift */; };
 		5205F1B32C04356E00AF5E86 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205F1B22C04356E00AF5E86 /* ModalView.swift */; };
+		5205F1B72C047E3000AF5E86 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205F1B62C047E3000AF5E86 /* CircularTransition.swift */; };
+		5205F1B92C0482D300AF5E86 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205F1B82C0482D300AF5E86 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		5205F1AE2C04255900AF5E86 /* Timer-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer-ViewModel.swift"; sourceTree = "<group>"; };
 		5205F1B02C04260400AF5E86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5205F1B22C04356E00AF5E86 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		5205F1B62C047E3000AF5E86 /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
+		5205F1B82C0482D300AF5E86 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +111,9 @@
 		5205F17A2C04233000AF5E86 /* study-timer */ = {
 			isa = PBXGroup;
 			children = (
-				5205F1AB2C0423C400AF5E86 /* components */,
+				5205F1B52C047DA300AF5E86 /* transition */,
+				5205F1B42C047D9800AF5E86 /* views */,
+				5205F1AB2C0423C400AF5E86 /* timer */,
 				5205F17B2C04233000AF5E86 /* AppDelegate.swift */,
 				5205F17D2C04233000AF5E86 /* SceneDelegate.swift */,
 				5205F17F2C04233000AF5E86 /* ViewController.swift */,
@@ -137,14 +143,30 @@
 			path = "study-timerUITests";
 			sourceTree = "<group>";
 		};
-		5205F1AB2C0423C400AF5E86 /* components */ = {
+		5205F1AB2C0423C400AF5E86 /* timer */ = {
 			isa = PBXGroup;
 			children = (
 				5205F1AC2C0423DE00AF5E86 /* TimerView.swift */,
 				5205F1AE2C04255900AF5E86 /* Timer-ViewModel.swift */,
-				5205F1B22C04356E00AF5E86 /* ModalView.swift */,
 			);
-			path = components;
+			path = timer;
+			sourceTree = "<group>";
+		};
+		5205F1B42C047D9800AF5E86 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				5205F1B22C04356E00AF5E86 /* ModalView.swift */,
+				5205F1B82C0482D300AF5E86 /* DetailView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		5205F1B52C047DA300AF5E86 /* transition */ = {
+			isa = PBXGroup;
+			children = (
+				5205F1B62C047E3000AF5E86 /* CircularTransition.swift */,
+			);
+			path = transition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,8 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5205F1802C04233000AF5E86 /* ViewController.swift in Sources */,
+				5205F1B92C0482D300AF5E86 /* DetailView.swift in Sources */,
 				5205F1AF2C04255900AF5E86 /* Timer-ViewModel.swift in Sources */,
 				5205F1B12C04260400AF5E86 /* ContentView.swift in Sources */,
+				5205F1B72C047E3000AF5E86 /* CircularTransition.swift in Sources */,
 				5205F17C2C04233000AF5E86 /* AppDelegate.swift in Sources */,
 				5205F1B32C04356E00AF5E86 /* ModalView.swift in Sources */,
 				5205F17E2C04233000AF5E86 /* SceneDelegate.swift in Sources */,
